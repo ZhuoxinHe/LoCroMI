@@ -1,0 +1,28 @@
+embedding_size: 64
+n_ui_layers: 2
+n_layers: 1
+
+learning_rate_scheduler: [0.96, 50]
+# baby:25,sports:25,clothing:25
+top_k: [25]
+knn_k: 10
+# [5,10,15,20]baby:15,sport:5,clothing:10,microlens:5
+knn_i: [5,10,15,20]
+
+learning_rate: 0.001
+
+# [0.001,0.01] baby:0.01,0.01;sports:0.01,0.01;clothing:0.01,0.001;microlens:0.01,0.01
+cl_loss: [0.01]
+cl_loss2: [0.01]
+# [0.1,1,10,20,30] baby:30,sport:10,clothing:1,microlens:10
+PI_loss: [0.1,1,10,20,30]
+# baby:1,sports:1,clothing:1
+alpha: [1]
+# baby:1, sports:1,clothing:1
+beta: [1]
+O: 10
+# [0.03]
+relabel_rate: [0.03]
+
+
+hyper_parameters: ["cl_loss","cl_loss2","alpha","beta","top_k","PI_loss","relabel_rate","knn_i"]

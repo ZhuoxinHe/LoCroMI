@@ -1,0 +1,8 @@
+torch>=2.4.1+cu121
+numpy>=1.24.4
+pandas>=2.0.3
+scipy>=1.10.1
+torchvision>=0.19.1+cu121
+pillow>=10.4.0
+pyyaml>=6.0.2
+matplotlib>=3.7.5
